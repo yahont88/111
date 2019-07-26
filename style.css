@@ -1,0 +1,529 @@
+body{
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    font-weight: 100;
+    background-color: rgb(247, 250, 253);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(47, 53, 58);
+    color: rgb(238, 243, 248);
+}
+
+.header-img {
+    display: flex;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 40px;
+}
+
+.header-info {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-personal {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.header-social a{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    position: relative;
+    font-weight: 600;
+}
+
+.header-personal a{
+    color: aliceblue;
+}
+
+.header-position{
+    font-weight: 500;
+}
+
+.header-contacts{
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.header-contacts a{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme{
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.aboutme-headline h2,
+.experience-headline h2 {
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-bottom: 1px solid #2F353A;
+    padding-bottom: 20px;
+}
+
+.experience-information{
+    display: flex;
+    flex-direction: column;
+}
+
+.li {
+    margin-top: 10px;
+    margin-left: -2px;
+    margin-right: -2px;
+   /* perspective: 500px;
+ perspective-origin: calc(50% + 120px) 50%;*/
+
+}
+
+.li span {
+    background-color: rgb(47, 53, 58);
+    color: rgb(238, 243, 248);
+    margin: 5px 2px;
+    padding: 3px 5px;
+    border-radius: 15px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'roboto';
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+   /* transform-style: preserve-3d;*/
+ transition: .2s;
+ cursor: pointer;
+}
+.li span:hover {
+    font-size: 43px;
+    /*animation: slide-fwd-center 0.45s both;*/
+    }
+   /* @-webkit-keyframes slide-fwd-center {
+        0% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+        }
+        100% {
+          -webkit-transform: translateZ(160px);
+                  transform: translateZ(160px);
+        }
+      }
+      @keyframes slide-fwd-center {
+        0% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+        }
+        100% {
+          -webkit-transform: translateZ(160px);
+                  transform: translateZ(160px);
+        }
+      }*/
+
+.aboutme-information {
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+#copyright{
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.all{
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 50px 1px #c3d0d6;
+}
+
+
+    @font-face {
+        font-family: 'Segoe UI';
+        src: url('/fonts/SegoeUI-Light.eot');
+        src: local('Segoe UI Light'), local('SegoeUI-Light'),
+            url('/fonts/SSegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/SegoeUI-Light.woff') format('woff'),
+            url('/fonts/SegoeUI-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Segoe UI';
+        src: url('/fonts/SegoeUI-BoldItalic.eot');
+        src: local('Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
+            url('/fonts/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/SegoeUI-BoldItalic.woff') format('woff'),
+            url('/fonts/SegoeUI-BoldItalic.ttf') format('truetype');
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'Segoe UI';
+        src: url('/fonts/SegoeUI-SemiBold.eot');
+        src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+            url('/fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/SegoeUI-SemiBold.woff') format('woff'),
+            url('/fonts/SegoeUI-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Segoe UI';
+        src: url('/fonts/SegoeUI.eot');
+        src: local('Segoe UI'), local('SegoeUI'),
+            url('/fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/SegoeUI.woff') format('woff'),
+            url('/fonts/SegoeUI.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Segoe UI';
+        src: url('/fonts/SegoeUI-Bold.eot');
+        src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
+            url('/fonts/SegoeUI-Bold.eotSegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/SegoeUI-Bold.eotSegoeUI-Bold.woff') format('woff'),
+            url('/fonts/SegoeUI-Bold.eotSegoeUI-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Segoe UI';
+        src: url('/fonts/SegoeUI-Italic.eot');
+        src: local('Segoe UI Italic'), local('SegoeUI-Italic'),
+            url('/fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/SegoeUI-Italic.woff') format('woff'),
+            url('/fonts/SegoeUI-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+    }
+
+
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('/fonts/');
+	src: local('Segoe UI Light'), local('SegoeUI-Light'),
+		url('/fonts/?#iefix') format('embedded-opentype'),
+		url('/fonts/SegoeUI-Light.woff') format('woff'),
+		url('/fonts/SegoeUI-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('/fonts/SegoeUI-BoldItalic.eot');
+	src: local('Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
+		url('/fonts/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/SegoeUI-BoldItalic.woff') format('woff'),
+		url('/fonts/SegoeUI-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('/fonts/SegoeUI-SemiBold.eot');
+	src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+		url('/fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/SegoeUI-SemiBold.woff') format('woff'),
+		url('/fonts/SegoeUI-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('/fonts/SegoeUI.eot');
+	src: local('Segoe UI'), local('SegoeUI'),
+		url('/fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/SegoeUI.woff') format('woff'),
+		url('/fonts/SegoeUI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('/fonts/SegoeUI-Bold.eot');
+	src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
+		url('/fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/SegoeUI-Bold.woff') format('woff'),
+		url('/fonts/SegoeUI-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('/fonts/SegoeUI-Italic.eot');
+	src: local('Segoe UI Italic'), local('SegoeUI-Italic'),
+		url('/fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/SegoeUI-Italic.woff') format('woff'),
+		url('/fonts/SegoeUI-Italic.ttf') format('truetype');
+	font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-MediumItalic.eot');
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+        url('/roboto/Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-MediumItalic.woff') format('woff'),
+        url('/roboto/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-Italic.eot');
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+        url('/roboto/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-Italic.woff') format('woff'),
+        url('/roboto/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('/roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-Bold.woff') format('woff'),
+        url('/roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-Regular.woff') format('woff'),
+        url('/roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-Medium.eot');
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+        url('/roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-Medium.woff') format('woff'),
+        url('/roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-BoldItalic.eot');
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+        url('/roboto/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-BoldItalic.woff') format('woff'),
+        url('/roboto/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-ThinItalic.eot');
+    src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'),
+        url('/roboto/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-ThinItalic.woff') format('woff'),
+        url('/roboto/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-Black.eot');
+    src: local('Roboto Black'), local('Roboto-Black'),
+        url('/roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-Black.woff') format('woff'),
+        url('/roboto/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-Light.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('/roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-Light.woff') format('woff'),
+        url('/roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-LightItalic.eot');
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+        url('/roboto/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-LightItalic.woff') format('woff'),
+        url('/roboto/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-BlackItalic.eot');
+    src: local('Roboto Black Italic'), local('Roboto-BlackItalic'),
+        url('/roboto/Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-BlackItalic.woff') format('woff'),
+        url('/roboto/Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/roboto/Roboto-Thin.eot');
+    src: local('Roboto Thin'), local('Roboto-Thin'),
+        url('/roboto/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/roboto/Roboto-Thin.woff') format('woff'),
+        url('/roboto/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+main {
+    display: flex;
+    background: #fff;
+    padding: 25px;
+    padding-bottom: 140px;
+}
+
+.aboutme {
+    max-width: 75%;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.experience {
+    max-width: 25%;
+}
+
+.aboutme-information {
+    padding-left: 40px;
+    position: relative;
+}
+
+.aboutme-information:after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 13px;
+    top: 0;
+    background-color: rgba(47, 53, 58, .6);
+}
+
+.aboutme-information p {
+    position: relative;
+}
+
+.aboutme-information p:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: -34px;
+    top: 0;
+    background-color: #fff;
+    border: 3px solid rgba(47, 53, 58, .6);
+    z-index: 1;
+}
+
+#path1366 {
+    fill: green;
+}
+
+#svg2 {
+    animation: rotating 5s linear infinite;
+}
+
+@keyframes rotating {
+    0 {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(100deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.btn {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    color: #000;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: transparent;
+    color: #fff;
+    transform: scale(1.2);
+}
